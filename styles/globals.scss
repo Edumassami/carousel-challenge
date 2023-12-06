@@ -1,0 +1,80 @@
+@import '../public/fonts/fonts.scss';
+
+
+* {
+    font-family: 'Biennale Regular';
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(30, 30, 30);
+}
+
+.conteudo {
+    width: 1200px;
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+
+.barraNavegacao {
+    display: flex;
+    background-color: darkred;
+    padding-left: 700px;
+
+    ul {
+        max-width: 800px;
+        list-style: none;
+        align-items: center;
+        display: flex;
+        
+        li {
+            
+            .link {
+                background-color: darkred;
+                display: inline-block;
+                padding: 10px 30px;
+                color: black;
+                text-decoration: none;
+                font-family: 'Biennale Bold';
+                font-size: 16px;              
+            }
+
+            :hover {
+                background-color: white;
+            }
+        }
+    }
+}
+
+.linhaDivisoria {
+    margin: 0;
+    border: none;
+    border-bottom: 2px solid black;
+    background-color: black;
+}
+
+
+
+.imagemCarousel{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.textoCarousel {
+    background-color: transparent;
+    width: 40%;
+   
+    .tituloCarousel{
+        background-color: transparentize($color: white, $amount: 0.5    );
+        margin: 40px 0px;
+        padding: 20px;
+        color: black;
+        font-family: 'Biennale Bold';
+    }
+    .descricaoCarousel{
+        background-color: transparent;
+        text-align: justify;
+    }
+}
